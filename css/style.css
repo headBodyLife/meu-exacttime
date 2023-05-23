@@ -1,53 +1,40 @@
-body{
-   
-    margin: auto;
-}
+/*html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }*/
 .container-fluid{
     padding: 0;
     
 }
 
-#container-fluid{
-    background-color:#262526;
-}
+
 
 
 /*----------CORES--------------------*/
+#container-fluid{
+    background-color:#262526;
+}
 
 .navbar-brand,
 #card-clocks h6,
 #title,
 #card-2,
-#highlights h4{
+#highlights h4,
+.bi-search,
+.bi-person,
+.bi-suit-heart,
+.bi-bag,
+.bi-envelope{
     color: #c19579;
 }
 #highlights button,
-#header,
+#header-container,
 #card-1,
 #footer-newsletter{
     background-color: black;
 
-}
-/*--------------NAVEGAÇÃO--------------*/
-#header{
-    margin: auto;
-}
-.navbar-brand:hover{
-    color: beige;
-    transition: .5s;
-}
-#navbar-header{
-    width: 100%;
-}
-
-.navbar-toggler{
-    border: none;
-}
-
-
-#navbar-header,
-#card-2{
-    background-color: #c19579;
 }
 
 #icons-header li{
@@ -58,33 +45,35 @@ body{
     color: black;
 }
 
+#navbar-header,
+#card-2{
+    background-color: #c19579;
+}
+/*--------------NAVEGAÇÃO--------------*/
+
+
+
+.navbar-brand:hover{
+    color: beige;
+    transition: .5s;
+}
+#header-form form{
+    width: 90%;
+}
 @media (max-width: 576px) 
 {
     
-    #header,
-    #header-content,
-    #navbar-header{
-        width: 100%;
+    #header-form form{
+        width: 90%;
     }
-    #header-content{
-        height: 200px;
-
-    }
+ 
     #navbarNavAltMarkup{
         text-align: center;
     }
-    #icons-header{
-        position: absolute;
-        bottom: 0px;
-        right: 20px;
-        margin: 10px auto;
-    }
-   
+  
 }
 /*----------------HEADER--------------*/
-.icons-items li{
-    padding-inline: 10px;
-}
+
 
 .custom-search form{
     display: inline-block;
@@ -92,7 +81,6 @@ body{
 }
 
 .custom-search-input{
-    width: 400px;
     border: none ;
     border: 2px #c19579 solid;
     background-color: black;
@@ -105,14 +93,6 @@ body{
     left: 12px; 
 }
 
-.bi-search,
-.bi-person,
-.bi-suit-heart,
-.bi-bag,
-.bi-envelope{
-    color: #c19579;
-    padding-right: 2px;
-}
 
 .custom-search input::placeholder{
     color: white;
@@ -136,37 +116,40 @@ body{
     #header-content .custom-search{
         position: absolute;
         top: 50%;
-        left: calc(50% - 200px);
         max-width: 376px;
 
     }
+ 
+    #header-form form{
+        margin: auto;
+    }
+    
 
 }
 
 /*-----------CAROUSEL--------------*/
-.carousel{
-   
-    /*width: 80%;*/
-    margin: auto;
-}
+
 
 .carousel-caption{
     background-color: black;
     bottom:60px;
 }
 
-@media (min-width: 425px) 
-{
-    .carousel{
-        max-width: 100%;
-    }
 
+
+@media (min-width: 996px) {
+    .carousel-control-prev{
+        left: 60px;
+    }
+    .carousel-control-next{
+        right: 60px;
+    }
 }
 /*-----------AMOSTRAS--------------*/
 
 .card-resume{
     height: 250px;
-    width: 300px;
+    width: 30%;
     bottom: 50px;
 
 }
@@ -175,9 +158,7 @@ body{
     background-color: #fcf5ec;
 }
 
-#demo-clocks{
-    width: 1000px;
-}
+
 #demo-clocks a{
     bottom: 15px;
     left: 25px;
@@ -199,15 +180,6 @@ body{
     .card-resume{
         width: auto;
         bottom: 0;
-    }
-    #demo-clocks{
-        max-width: 100%;
-        
-    }
-    #cards{
-        flex-direction: column;
-        padding: 0;
-
     }
 
 }
