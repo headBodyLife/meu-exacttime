@@ -36,7 +36,7 @@
     <div class="container-fluid" id="container-fluid">
         <div class="row m-0" id="header-container">
             <!--------------------CABEÇALHO------------------------->
-            <header class="col-12 col-md-3 p-0" id="header">
+            <header class="col-12 col-sm-12 col-md-3 p-0" id="header">
                 <div class="d-md-flex justify-content-md-end p-0" id="header-content">
                     <nav class="navbar navbar-expand-lg primary-bg-color justify-content-center p-4" id="navbar">
                         <a href="" class="navbar-brand fw-bold fs-4 p-0">ExactTime</a>
@@ -45,14 +45,15 @@
             </header>
 
             <!--------------------Form------------------------->
-            <div class="d-flex d-md-flex col-md-5 col-12 custom-search align-items-center justify-content-center justify-content-md-center p-0" id="header-form">
+            <div class="d-flex d-md-flex col-md-5 col-12 custom-search align-items-center justify-content-center justify-content-md-center p-0"
+                id="header-form">
                 <form class="m-0">
-                    
-                        <i class="bi bi-search"></i>
-                        <input type="text" class="form-control custom-search-input p-2"
-                            placeholder="Busque o seu relógio...">
-                        <button class="custom-search-botton me-1" type="submit">Pesquisar</button>
-                    
+
+                    <i class="bi bi-search"></i>
+                    <input type="search" class="form-control custom-search-input p-2"
+                        placeholder="Busque o seu relógio...">
+                    <button class="custom-search-botton me-1" type="submit">Pesquisar</button>
+
                 </form>
             </div>
             <!--------------------icons------------------------->
@@ -70,7 +71,7 @@
 
         <!----------------NAVEGAÇÂO------------------------>
 
-        <nav class="navbar navbar-expand-lg navbar-light  m-0" id="navbar-header">
+        <nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-sm navbar-light m-0" id="navbar-header">
             <div class="d-flex container-fluid justify-content-end">
                 <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -129,25 +130,25 @@
         </section>
         <!-------------------AMOSTRAS------------------------>
         <section class="row m-auto m-md-auto" id="demo-clocks">
-                <div class="col-md-10 m-md-auto">
-                    <div class="row d-md-flex flex-md-row flex-column justify-content-around p-0 " id="cards">
-                        <div class="d-inline-flex position-relative card-resume" id="card-1">
-                            <h2 class="d-inline-block position-absolute text-white">NOVA COLEÇÂO</h2>
-                            <img class="position-absolute" src="img/relogio1.png" alt="">
-                            <a class="position-absolute text-white fw-bolder" href="">Compre Agora!</a>
-                        </div>
-                        <div class="d-inline-flex position-relative card-resume" id="card-2">
-                            <h2 class="d-inline-block position-absolute text-white">PROMOÇÕES</h2>
-                            <img class="position-absolute" src="img/relogio2.png" alt="">
-                            <a class="position-absolute text-white fw-bolder" href="">Compre Agora!</a>
-                        </div>
-                        <div class="d-inline-flex position-relative card-resume" id="card-3">
-                            <h2 class="d-inline-block position-absolute text-secondary">EDIÇÃO LIMITADA</h2>
-                            <img class="position-absolute" src="img/relogio3.png" alt="">
-                            <a class="position-absolute text-secondary fw-bolder" href="">Compre Agora!</a>
-                        </div>
+            <div class="col-md-10 m-md-auto">
+                <div class="row d-md-flex flex-md-row flex-column flex-sm-row justify-content-around p-0 " id="cards">
+                    <div class="d-inline-flex position-relative card-resume" id="card-1">
+                        <h2 class="d-inline-block position-absolute text-white">NOVA COLEÇÂO</h2>
+                        <img class="position-absolute" src="img/relogio1.png" alt="">
+                        <a class="position-absolute text-white fw-bolder" href="">Compre Agora!</a>
+                    </div>
+                    <div class="d-inline-flex position-relative card-resume" id="card-2">
+                        <h2 class="d-inline-block position-absolute text-white">PROMOÇÕES</h2>
+                        <img class="position-absolute" src="img/relogio2.png" alt="">
+                        <a class="position-absolute text-white fw-bolder" href="">Compre Agora!</a>
+                    </div>
+                    <div class="d-inline-flex position-relative card-resume" id="card-3">
+                        <h2 class="d-inline-block position-absolute text-secondary">EDIÇÃO LIMITADA</h2>
+                        <img class="position-absolute" src="img/relogio3.png" alt="">
+                        <a class="position-absolute text-secondary fw-bolder" href="">Compre Agora!</a>
                     </div>
                 </div>
+            </div>
         </section>
         <!-------------------BEST SELLERS-------------------->
         <section>
@@ -197,16 +198,14 @@
         </section>
         <!------------------DESCONTO------------------------->
         <section class="row" id="highlights">
-            <div class="d-flex">
-                <div class="col-12 col-md-8 my-auto text-center">
-                    <div class="highlights-content">
-                        <h4>DESCONTO DE ATÉ 75%</h4>
-                        <h2 class="text-white">RELOGIO X</h2>
-                        <p><span class="text-muted">Presenteie o seu amor com este relógio</span></p>
-                        <button class="btn btn-dark fw-bolder">Comprar Agora</button>
-                    </div>
+            <div class="d-md-flex">
+                <div class="col-12 col-md-6 flex-md-row my-auto text-center" id="highlights-content">
+                    <h4>DESCONTO DE ATÉ 75%</h4>
+                    <h2 class="text-white">RELOGIO X</h2>
+                    <p><span class="text-muted">Presenteie o seu amor com este relógio</span></p>
+                    <button class="btn btn-dark fw-bolder">Comprar Agora</button>
                 </div>
-                <div class="col-12 col-md-4 my-auto text-center">
+                <div class="col-12 col-md-6 my-auto text-center">
                     <img src="img/relogio7.png" alt="">
                 </div>
             </div>
@@ -344,23 +343,26 @@
             </div>
         </section>
         <!------------------NEWSLETTER-------------------------->
-        <section class="container-fluid w-100 " id="footer-newsletter">
-            <div class="row p-0 w-100 m-0">
-                <div class="d-flex col-md-12 justify-content-center p-0">
-                    <div class="custom-search" id="form-input">
-                        <p class="text-muted">Se inscreva na nossa Newsletter:</p>
-                        <form>
-                            <i class="bi bi-envelope"></i>
-                            <input type="text" class="custom-search-input py-2" placeholder="Insira o seu email...">
-                            <button class="custom-search-botton" type="submit">Enviar</button>
+        <section class="container-fluid py-5" id="footer-newsletter">
+            <div class="row justify-content-center m-0">
+                <div class="col-9  col-md-6 justify-content-center p-0">
+                        <form class="custom-search" id="form-input">
+                            <p class="text-muted text-center">Se inscreva na nossa Newsletter:</p>
+                            <div class="input-group">
+                                
+                                <i class="bi bi-envelope"></i>
+                                <input type="text" class="form-control custom-search-input py-2" placeholder="Insira o seu email...">
+                                <button class="custom-search-botton" type="submit">Enviar</button>
+                            </div>
                         </form>
-                        <div class="d-flex justify-content-center" id="icons-contact">
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-youtube"></i>
-                            <i class="bi bi-twitter"></i>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="row m-0 p-0">
+                <div class="d-flex justify-content-center" id="icons-contact">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-twitter"></i>
                 </div>
             </div>
         </section>
@@ -369,6 +371,7 @@
             <div class="row w-100 m-0" id="footer">
                 <div class="col-md-12 p-0">
                     <div class="footer">
+                        
                         <p>Todos os direitos reservados @2021 <span id="exact-color">ExactTime</span> - A sua loja de
                             relógios</p>
                     </div>
